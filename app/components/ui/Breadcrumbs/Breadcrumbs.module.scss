@@ -1,0 +1,12 @@
+.item {
+  &:last-of-type {
+    display: none;
+  }
+}
+
+.link {
+  &:last-of-type {
+    pointer-events: none;
+    color: #6f6f6f;
+  }
+}

@@ -1,0 +1,12 @@
+.plans {
+  .item {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &:hover {
+    .item {
+      opacity: 1;
+    }
+  }
+}

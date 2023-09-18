@@ -1,0 +1,12 @@
+export { BranchCompany } from "./BranchCompany/BranchCompany";
+export { MarqueeLight } from "./MarqueeLight/MarqueeLight";
+export { Directors } from "./Directors/Directors";
+export { MapProjects } from "./MapProjects/MapProjects";
+export { LastArticles } from "./LastArticles/LastArticles";
+export { SubscribeForm } from "./SubscribeForm/SubscribeForm";
+export { ConnectToUs } from "./ConnectToUs/ConnectToUs";
+export { LifeScroll } from "./LifeScroll/LifeScroll";
+export { CompanyFeatures } from "./CompanyFeatures/CompanyFeatures";
+export { Marquee } from "./Marquee/Marquee";
+export { OurMission } from "./OurMission/OurMission";
+export { Hero } from "./Hero/Hero";

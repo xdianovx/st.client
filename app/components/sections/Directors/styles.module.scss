@@ -1,0 +1,17 @@
+.swiper_one_side {
+
+  :global(.swiper) {
+    overflow: visible;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 100%;
+      width: 100vw;
+      background: #fff;
+      z-index: 2;
+    }
+  }
+}

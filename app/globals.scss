@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  outline: none;
+}
+
+html {
+  font-size: calc(100vw / 1920);
+  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+body {
+  font-size: 16rem;
+  background: #fff;
+  color: #1f1f1f;
+  white-space: pre-line;
+}
+.marquee__item-black {
+  display: inline-flex;
+  text-shadow: 0 -1px #c6c6c6, 1px 0 #c6c6c6, 0 1px #c6c6c6, -1px 0 #c6c6c6;
+  padding-bottom: 1px;
+}
+
+.marquee__item-gray {
+  display: inline-flex;
+  text-shadow: 0 -1px #333333, 1px 0 #333333, 0 1px #333333, -1px 0 #333333;
+  padding-bottom: 1px;
+}
+
+.shadow {
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(31, 31, 31, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(31, 31, 31, 0) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(31, 31, 31, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f1f1f",endColorstr="#1f1f1f",GradientType=1);
+}
+
+.scroll-life-image {
+  .scroll-life-image-img {
+    object-fit: cover;
+  }
+
+  &:nth-of-type(1) {
+    .scroll-life-image-img {
+      height: 572rem;
+      width: 560rem;
+    }
+    margin-left: auto;
+  }
+
+  &:nth-of-type(2) {
+    .scroll-life-image-img {
+      height: 420rem;
+      width: 560rem;
+    }
+    margin-top: -250rem;
+  }
+
+  &:nth-of-type(3) {
+    margin-top: 142rem;
+    .scroll-life-image-img {
+      height: 487rem;
+      width: 416rem;
+    }
+    margin-left: 840rem;
+  }
+
+  &:nth-of-type(4) {
+    .scroll-life-image-img {
+      height: 535rem;
+      width: 840rem;
+    }
+    margin-top: 240rem;
+  }
+}
