@@ -1,5 +1,5 @@
 // import { CaretSvg } from "./chevron.svg";
-
+"use client";
 import cn from "classnames";
 import { Variants, motion } from "framer-motion";
 import { useState } from "react";

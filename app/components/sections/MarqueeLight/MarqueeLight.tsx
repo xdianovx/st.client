@@ -1,3 +1,5 @@
+"use client";
+
 import cn from "classnames";
 import styles from "./style.module.scss";
 import { useLayoutEffect, useRef } from "react";
