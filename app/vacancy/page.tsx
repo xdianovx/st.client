@@ -11,7 +11,7 @@ import {
 } from "../components/sections";
 import { Cooperate } from "../components/forms";
 
-export default function TeamPage() {
+export default function VacancyPage() {
   useLayoutEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;

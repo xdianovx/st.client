@@ -1,3 +1,5 @@
+"use client";
+
 import cn from "classnames";
 import { LinkUnderline, Plus } from "../../ui";
 import { Variants, motion } from "framer-motion";
