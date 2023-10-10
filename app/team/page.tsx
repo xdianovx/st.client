@@ -6,7 +6,7 @@ import { teamData } from "../db";
 import { TeamCard } from "../components";
 import { TalentSearch } from "../components/sections";
 
-export default function ProjectsPage() {
+export default function TeamPage() {
   useLayoutEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
