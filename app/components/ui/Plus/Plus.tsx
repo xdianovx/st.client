@@ -7,9 +7,15 @@ export interface iPlus {
   className?: string;
   isOpen: boolean;
   isHover: boolean;
+  size?: "sm" | "xl";
 }
 
-export const Plus = ({ className = "", isOpen, isHover }: iPlus) => {
+export const Plus = ({
+  className = "",
+  isOpen,
+  isHover,
+  size = "sm",
+}: iPlus) => {
   const variantsCross: Variants = {
     open: { rotate: 90 },
     close: { rotate: 0, top: 0 },
@@ -17,7 +23,10 @@ export const Plus = ({ className = "", isOpen, isHover }: iPlus) => {
 
   return (
     <div
-      className={cn(className, "pointer relative h-[20rem] w-[20rem]")}
+      className={cn(className, "pointer relative ", {
+        ["h-[20rem] w-[20rem]"]: size === "sm",
+        ["h-[40rem] w-[40rem]"]: size === "xl",
+      })}
     >
       <div className="absolute left-1/2 top-1/2 h-[1rem] w-full -translate-x-1/2 -translate-y-1/2 bg-black"></div>
       <motion.div

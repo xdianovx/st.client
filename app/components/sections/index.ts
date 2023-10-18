@@ -1,3 +1,6 @@
+export { TeamReviews } from "./TeamReviews/TeamReviews";
+export { ActualVacancy } from "./ActualVacancy/ActualVacancy";
+export { TalentSearch } from "./TalentSearch/TalentSearch";
 export { BranchCompany } from "./BranchCompany/BranchCompany";
 export { MarqueeLight } from "./MarqueeLight/MarqueeLight";
 export { Directors } from "./Directors/Directors";

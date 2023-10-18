@@ -1,5 +1,5 @@
 "use client";
-
+import RotatingText from "rotating-text";
 import classNames from "classnames";
 import { Variants, motion } from "framer-motion";
 import Link from "next/link";

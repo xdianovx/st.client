@@ -1,5 +1,7 @@
 import "./globals.scss";
 import "swiper/css";
+import "rotating-text/dist/index.css";
+
 import type { Metadata } from "next";
 
 import { Header } from "./components/Header";
