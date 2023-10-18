@@ -24,7 +24,7 @@ export const Projects = ({ className }: iProjects) => {
             Наши <br /> проекты
           </h2>
 
-          <div className="flex gap-[140rem]">
+          <div className="flex gap-[140rem] items-start">
             <Dropdown title="Выберите статус постройки" />
             <Dropdown title="Выберите город" />
           </div>
