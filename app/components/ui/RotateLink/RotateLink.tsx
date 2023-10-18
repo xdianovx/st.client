@@ -27,30 +27,31 @@ export const RotateLink = ({
     },
   };
   return (
-    <a href={link} className={cn("link text-hover-effect block", {})}>
-      <span>
-        <div
-          className={`flex flex-col h-[${textSize}rem] text-[${textSize}rem] overflow-hidden leading-[100%]`}
-          onMouseEnter={() => setIsHover(true)}
-          onMouseLeave={() => setIsHover(false)}
+    <a href={link} className={cn("", {})}>
+      <span
+        className={cn("flex flex-col overflow-hidden leading-[100%] ", {
+          ["h-[24rem] text-[24rem]"]: textSize === 24,
+          ["h-[27rem] text-[27rem]"]: textSize === 27,
+        })}
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+      >
+        <motion.span
+          className=""
+          initial="close"
+          variants={hoverVar}
+          animate={isHover ? "open" : "close"}
         >
-          <motion.span
-            className=""
-            initial="close"
-            variants={hoverVar}
-            animate={isHover ? "open" : "close"}
-          >
-            {text}
-          </motion.span>
-          <motion.span
-            className=""
-            initial="close"
-            variants={hoverVar}
-            animate={isHover ? "open" : "close"}
-          >
-            {text}
-          </motion.span>
-        </div>
+          {text}
+        </motion.span>
+        <motion.span
+          className="relative"
+          initial="close"
+          variants={hoverVar}
+          animate={isHover ? "open" : "close"}
+        >
+          {text}
+        </motion.span>
       </span>
     </a>
   );
