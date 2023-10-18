@@ -3,6 +3,7 @@
 import cn from "classnames";
 import { Variants, motion } from "framer-motion";
 import { useState } from "react";
+import { useSpring } from "framer-motion";
 
 interface iRotateLink {
   text: string;
@@ -21,9 +22,14 @@ export const RotateLink = ({
   const hoverVar: Variants = {
     open: {
       y: "-100%",
+      skewY: [5, 0],
+      transition: {
+        repeatType: "reverse",
+      },
     },
     close: {
       y: "0",
+      skewY: [0, 0],
     },
   };
   return (

@@ -1,3 +1,6 @@
+export { PinButton } from "./PinButton/PinButton";
+
+export { ContactsListItem } from "./ContactsListItem/ContactsListItem";
 export { RotateLink } from "./RotateLink/RotateLink";
 export { ButtonArrow } from "./ButtonArrow/ButtonArrow";
 export { LoadMoreBtn } from "./LoadMoreBtn/LoadMoreBtn";
