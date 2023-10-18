@@ -16,7 +16,7 @@ export const OffersSlider = ({ className }: iOffersSlider) => {
       description:
         "По программе «IT ипотека» от Стройград можно приобрести строящееся жилье по субсидированной ставке 2,99% на срок кредита до 30 лет.",
       image: "/img/makaka.jpg",
-      link: "",
+      link: "/news/1",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export const OffersSlider = ({ className }: iOffersSlider) => {
       description:
         "По программе «IT ипотека» от Стройград можно приобрести строящееся жилье по субсидированной ставке 2,99% на срок кредита до 30 лет.",
       image: "",
-      link: "",
+      link: "/news/1",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export const OffersSlider = ({ className }: iOffersSlider) => {
       description:
         "По программе «IT ипотека» от Стройград можно приобрести строящееся жилье по субсидированной ставке 2,99% на срок кредита до 30 лет.",
       image: "",
-      link: "",
+      link: "/news/1",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ export const OffersSlider = ({ className }: iOffersSlider) => {
       description:
         "По программе «IT ипотека» от Стройград можно приобрести строящееся жилье по субсидированной ставке 2,99% на срок кредита до 30 лет.",
       image: "",
-      link: "",
+      link: "/news/1",
     },
   ];
   return (
@@ -55,7 +55,7 @@ export const OffersSlider = ({ className }: iOffersSlider) => {
           >
             {data.map((item) => (
               <SwiperSlide className="max-w-[535rem]" key={item.id}>
-                <OfferCard data={item} />
+                <OfferCard data={item} link={item.link} />
               </SwiperSlide>
             ))}
           </Swiper>

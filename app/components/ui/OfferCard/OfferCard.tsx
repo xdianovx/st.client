@@ -3,14 +3,16 @@
 import cn from "classnames";
 import { Variants, motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export interface iOfferCard {
   data: any;
+  link?: string;
   className?: string;
 }
 
-export const OfferCard = ({ data, className }: iOfferCard) => {
+export const OfferCard = ({ data, className, link }: iOfferCard) => {
   const [isHover, setIsHover] = useState(false);
 
   const variants: Variants = {
@@ -18,7 +20,8 @@ export const OfferCard = ({ data, className }: iOfferCard) => {
     hide: { opacity: 0 },
   };
   return (
-    <div
+    <Link
+      href={link}
       className={cn(
         "relative top-0 mt-[64rem] flex h-[476rem] flex-col overflow-hidden rounded-[4rem] border border-grayBorder transition-all duration-300 ease-in-out hover:-top-[64rem]",
         className
@@ -70,6 +73,6 @@ export const OfferCard = ({ data, className }: iOfferCard) => {
           {data.description}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
