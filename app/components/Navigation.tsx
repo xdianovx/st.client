@@ -68,7 +68,7 @@ export const Navigation = () => {
       animate={isOpen ? "open" : "close"}
       initial="close"
       className={cn(
-        "main-menu absolute left-0  z-10 flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-black text-white "
+        "main-menu absolute left-0  z-[500] flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-black text-white "
       )}
     >
       <div className="container">

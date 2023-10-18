@@ -9,7 +9,7 @@ export const Header = (): JSX.Element => {
   const isOpen = useSelector((state: RootState) => state.isMenuOpen.value);
 
   return (
-    <header className="relative z-50">
+    <header className="relative z-[500]">
       <div className="container">
         <div
           className={cn(

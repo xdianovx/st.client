@@ -27,10 +27,10 @@ export const Breadcrumbs = ({ links, className }: iBreadcrumbs) => {
         </Link>
 
         {uri?.map((item, idx) => {
-          if (item == "projects") item = "Проекты";
-          if (item == "news") item = "Новости";
-          if (item == "team") item = "Руководство";
-          if (item == "about") item = "О компании";
+          // if (item == "projects") item = "Проекты";
+          // if (item == "news") item = "Новости";
+          // if (item == "team") item = "Руководство";
+          // if (item == "about") item = "О компании";
 
           return (
             <>
