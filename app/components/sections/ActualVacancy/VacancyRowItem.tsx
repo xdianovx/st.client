@@ -50,7 +50,7 @@ export const VacancyRowItem = ({ data, className }: iVacancyRowItem) => {
           initial="close"
           animate={isOpen ? "open" : "close"}
         >
-          <div className="pt-[100rem]">
+          <div className="py-[100rem]">
             <div className="flex">
               {data.duties && (
                 <div className="max-w-[560rem] w-full">
