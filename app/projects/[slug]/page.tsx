@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  LastArticles,
-  MarqueeLight,
-  SubscribeForm,
-} from "@/app/components/sections";
+import { LastArticles, MarqueeLight } from "@/app/components/sections";
 import s from "./page.module.scss";
 import {
   Breadcrumbs,
