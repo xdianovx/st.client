@@ -1,7 +1,7 @@
 "use client";
 
 import { useLayoutEffect } from "react";
-import { SubscribeForm } from "../components/sections";
+import { MarqueeLight, SubscribeForm } from "../components/sections";
 import {
   Breadcrumbs,
   Dropdown,
@@ -97,8 +97,10 @@ export default function NewsPage() {
               <NewsCard data={item} key={item.id} />
             ))}
           </div>
+        </div>
+        <MarqueeLight data="ывдлаодыв ыволдаоы" className="my-[250rem]" />
 
-          <p className="mt-[150rem]">Бегущая строка</p>
+        <div className="container">
           <div className="mt-[80rem] grid grid-cols-2 gap-[20rem]">
             {data.map((item) => (
               <NewsCard data={item} key={item.id} />
