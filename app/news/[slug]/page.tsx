@@ -1,7 +1,16 @@
+"use client";
+
 import { LastArticles } from "@/app/components/sections";
 import { Breadcrumbs, ShareSocial, Text } from "@/app/components/ui";
+import { useLayoutEffect } from "react";
 
 export default function SingleNewsPage() {
+  useLayoutEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
   return (
     <>
       <section>
@@ -65,11 +74,6 @@ export default function SingleNewsPage() {
           </div>
 
           <ShareSocial className="mt-[100rem]" />
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <p>Последние новости</p>
         </div>
       </section>
 
