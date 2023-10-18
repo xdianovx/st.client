@@ -1,3 +1,4 @@
+export { RotateLink } from "./RotateLink/RotateLink";
 export { ButtonArrow } from "./ButtonArrow/ButtonArrow";
 export { LoadMoreBtn } from "./LoadMoreBtn/LoadMoreBtn";
 export { ListItem } from "./ListItem/ListItem";

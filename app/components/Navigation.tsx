@@ -6,8 +6,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { RootState } from "../store/store";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { close } from "../store/slices/isMenuOpen";
+import { RotateLink } from "./ui";
 
 export const Navigation = () => {
   const links = [
@@ -62,31 +63,8 @@ export const Navigation = () => {
 
           <div className="flex w-[280rem] flex-col">
             <div className="flex flex-col gap-[10rem]">
-              <a href="/vacancy" className="link text-hover-effect block">
-                <span className="mask h-[24rem]">
-                  <div className="link-container">
-                    <span className="link-title1 title text-[24rem] ">
-                      Вакансии
-                    </span>
-                    <span className="link-title2 title text-[24rem] ">
-                      Вакансии
-                    </span>
-                  </div>
-                </span>
-              </a>
-
-              <a href="/contacts" className="link text-hover-effect  block">
-                <span className="mask h-[24rem]">
-                  <div className="link-container">
-                    <span className="link-title1 title text-[24rem]">
-                      Контакты
-                    </span>
-                    <span className="link-title2 title text-[24rem]">
-                      Контакты
-                    </span>
-                  </div>
-                </span>
-              </a>
+              <RotateLink text="Вакансии" link="/vacancy" />
+              <RotateLink text="Контакты" link="/contacts" />
             </div>
 
             <p className="mt-[50rem] text-[24rem] text-gray ">
@@ -96,38 +74,18 @@ export const Navigation = () => {
         </div>
 
         <div className="mt-[128rem] flex  items-center justify-between pl-[280rem] pr-[123rem]">
-          <div className="flex w-[900rem] gap-[48rem] text-[27rem] leading-none">
-            <a
-              href="mailto:info@stroygrad.ru"
-              className="link text-hover-effect block sm:hidden"
-            >
-              <span className="mask h-[24rem]">
-                <div className="link-container">
-                  <span className="link-title1 title text-[24rem]">
-                    info@stroygrad.ru
-                  </span>
-                  <span className="link-title2 title text-[24rem]">
-                    info@stroygrad.ru
-                  </span>
-                </div>
-              </span>
-            </a>
+          <div className="flex w-[900rem] gap-[48rem]">
+            <RotateLink
+              text="info@stroygrad.ru"
+              link="mailto:info@stroygrad.ru"
+              textSize={27}
+            />
 
-            <a
-              href="tel:+7 (8652)-23-90-33"
-              className="link text-hover-effect  block"
-            >
-              <span className="mask h-[24rem]">
-                <div className="link-container">
-                  <span className="link-title1 title text-[24rem] ">
-                    +7 (8652)-23-90-33
-                  </span>
-                  <span className="link-title2 title text-[24rem] ">
-                    +7 (8652)-23-90-33
-                  </span>
-                </div>
-              </span>
-            </a>
+            <RotateLink
+              text="+7 (8652)-23-90-33"
+              link="tel:+7 (8652)-23-90-33"
+              textSize={27}
+            />
           </div>
           <div className="w-[280rem]">
             <p>
