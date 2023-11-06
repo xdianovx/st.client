@@ -9,8 +9,8 @@
   // transform: translateX(-50%);
 
   :global(.swiper) {
-    top: 0;
     transform: translateY(-50%);
+    top: 0;
     transition: top 0.3s;
   }
 }

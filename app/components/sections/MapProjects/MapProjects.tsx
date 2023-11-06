@@ -1,5 +1,6 @@
 import cn from "classnames";
 import { Suptitle, Text } from "@/app/components/ui";
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 
 export interface iMapProjects {
   className?: string;
@@ -18,7 +19,27 @@ export const MapProjects = ({ className }: iMapProjects) => {
         </div>
       </div>
 
-      <div className="mt-[100rem] h-[920rem] bg-grayLight"></div>
+      <div className="mt-[100rem] h-[920rem] bg-grayLight">
+      <YMaps>
+              <Map
+                instanceRef={(ref) => {
+                  ref && ref.behaviors.disable("scrollZoom");
+                }}
+                style={{
+                  height: "100%",
+                  filter: "grayscale(1)",
+                }}
+                width="100%"
+                defaultState={{
+                  center: [55.569754, 37.132895],
+                  zoom: 10,
+                }}
+              >
+                <Placemark geometry={[55.569754, 37.132895]} />
+              </Map>
+            </YMaps>
+          </div>
+      
     </section>
   );
 };
